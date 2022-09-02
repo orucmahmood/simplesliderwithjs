@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.image-slider {
+  min-height: 30em;
+  height: 100vh;
+  position: relative;
+  background: url("./img/Qubbatus\ Sahra.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image slider * {
+  box-sizing: border-box;
+}
+
+.caption {
+  background: linear-gradient(rgba(0, 0, 0, 0), #000);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.caption h1 {
+  font-size: 3em;
+  color: #fff;
+  margin: 0;
+}
+
+.caption p {
+  color: #8a8a8a;
+  font-size: 1.5em;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 1em;
+}
+
+.right-arrow {
+  right: 1em;
+}
+
+.image-fade {
+  animation: imgFade 0.3s ease-in-out;
+}
+
+@keyframes imgFade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
